@@ -1,0 +1,22 @@
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+li{
+    width: 275px;
+    border:1px solid rgb(22, 22, 22);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.76);
+    transition: transform 250ms ease;
+}
+.li:hover,
+.li:focus{
+    transform: scale(1.07);
+}
