@@ -1,11 +1,12 @@
 import axios from "axios";
+import { Image } from "../../components/App/App.types";
 
 const instance = axios.create({
   baseURL: "https://api.unsplash.com/",
 });
 
 interface Api {
-  results: [];
+  results: Image[];
   total_pages: number;
 }
 export const fetchProductsByQuery = async (

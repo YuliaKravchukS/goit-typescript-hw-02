@@ -28,7 +28,7 @@ function App() {
         setIsLoading(true);
         const data = await fetchProductsByQuery(query, currentPage);
 
-        setImages((prevImages: Image[]): Image[] => {
+        setImages((prevImages) => {
           if ((prevImages && query === prevQuery) || currentPage !== 1) {
             console.log("prevImages ", prevImages);
             return [...prevImages, ...data.results];
